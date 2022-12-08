@@ -19,7 +19,7 @@ li {
 }
 
 .li1 {
-    margin-left: 120%;
+    margin-left: 65%;
 }
 
 #name1 {
@@ -210,6 +210,13 @@ i {
 .resume{
     margin:10% 7% 0% 7% ;
 }
+.education{
+    width: 50%;
+}
+.experience{
+    /* text-align: right; */
+    width: 50%;
+}
 .resume_heading{
     text-align: center;
     font-size: 400%;
@@ -390,6 +397,52 @@ i {
 
 
 
+/* divider between education and experience  */
+.vl {
+    /* border-left: 6px double rgb(80 116 245); */
+    border-left: 6px rgb(93, 128, 251) groove;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 610px;
+    
+  }
+.divider{
+    display: flex;
+}
+
+/* BLOG  */
+.blogs{
+    display: flex;
+}
+.blog_images{
+    height: 40%;
+    margin-left: -3%;
+    width: 106.5%;
+}
+.blogs_heading{
+    text-align: center;
+    margin-bottom: 3%;
+    font-size:400%;
+}
+.blog_block{
+    text-align: left;
+    /* border: 2px solid red; */
+    margin: 0% 2% 0% 2%;
+    box-shadow: 0px 0px 15px 0px rgb(184, 183, 183);
+    height: 100%;
+    cursor: pointer;
+}
+.certificates_heading{
+    text-align: center;
+    font-size: 400%;
+}
+.certificates_images{
+    height: 500px;
+    width: 100%;
+    border-radius: 2%;
+
+    
+}
 
 
 
@@ -458,11 +511,18 @@ i {
 
 
 
+  @media only screen and (max-width: 1500px) {
+    .li1 {
+      margin-left: 40%;
+  }
+    }
 
 
-
-
-
+  @media only screen and (max-width: 1250px) {
+  .li1 {
+    margin-left: 25%;
+}
+  }
 
 
 
@@ -501,14 +561,24 @@ i {
         margin-bottom: 10%;
     }
     .popup_block{
-        /* padding: 2%;
-        margin: 7% 10% 0% 10%;
-        box-shadow: 0px 0px 15px 0px rgb(184, 183, 183);
-        /* border: 2px solid red; */
-        /* width: 80%; */  
+ 
         display: flex;
         flex-direction: column;
         gap: 5%;
+    }
+    .divider{
+        display: flex;
+        flex-direction: column;
+    }
+    .vl{
+        display: none;
+    }
+    .education{
+        margin-bottom: 10%;
+        width: 100%;
+    }
+    .experience{
+        width: 100%;
     }
     .progressbars{
         display: flex;
@@ -523,6 +593,37 @@ i {
         height:300px ;
         margin-top: 1%;
 
+    }
+    .resume_heading{
+        font-size: 300%;
+        margin-bottom: 10%;
+    }
+    .certificates_heading{
+        font-size: 300%;
+    }
+    .projects_heading{
+        font-size: 300%;
+    }
+    .testo_heading{
+        font-size: 300%;
+    }
+    .blogs_heading{
+        font-size: 300%;
+        margin-bottom: 10%;
+    }
+    .blog_images{
+        height: 200px;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_block{
+        margin:0% 0% 10% 8%;
+        width: 90%;
+    }
+    .bloginside{
+        display: block;
     }
     .carousal_description{
         display: flex;
