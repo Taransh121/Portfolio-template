@@ -385,12 +385,18 @@ i {
 
 }
 .footer{
-    background-color: black;
+    background-color: #0b5ed7;
     color: white;
     text-align: center;
-    height: 30px;
+    height: 400px;
     margin-top:5%;
     font-family:'Courier New', Courier, monospace;
+}
+.footer_heading{
+    padding-top: 7%;
+}
+.footer_icon{
+    margin: 3% 3% 4% 3%;
 }
 
 
@@ -528,6 +534,12 @@ i {
 
 
 @media only screen and (max-width: 1000px) {
+    .description{
+        flex-direction: column;
+    }
+    #description_text {
+        margin-top: -15%;
+    }
     .findme {
         margin-top: 10%;
     }
@@ -590,8 +602,9 @@ i {
         margin-left: 20%;
       }
     #myimage{
-        height:300px ;
+        height:250px ;
         margin-top: 1%;
+        margin-left: 25%;
 
     }
     .resume_heading{
@@ -636,6 +649,7 @@ i {
     .footer{
         font-size: 12px;
         margin-right: -20px;
+        height: 175px;
     }
     
 }
